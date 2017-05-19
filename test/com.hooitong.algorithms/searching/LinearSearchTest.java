@@ -1,8 +1,8 @@
 package com.hooitong.algorithms.searching;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author Jarrett Yeap Hooi Tong <dev@hooitong.com>
