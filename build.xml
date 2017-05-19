@@ -1,8 +1,8 @@
 <project name="junit-example">
   <property name="main.build.dir" value="build/main"/>
-  <property name="main.src.dir" value="src/main/java"/>
+  <property name="main.src.dir" value="src/com/hooitong/algorithms/"/>
   <property name="test.build.dir" value="build/test"/>
-  <property name="test.src.dir" value="src/test/java"/>
+  <property name="test.src.dir" value="test/com/hooitong/algorithms/"/>
 
   <path id="classpath.test">
     <pathelement location="lib/junit-4.12.jar"/>
@@ -28,9 +28,9 @@
         <path refid="classpath.test"/>
         <pathelement location="${test.build.dir}"/>
       </classpath>
-      <formatter type="brief" usefile="false" />
+      <formatter type="brief" usefile="false"/>
       <batchtest>
-        <fileset dir="${test.src.dir}" includes="**/*Test.java" />
+        <fileset dir="${test.src.dir}" includes="**/*Test.java"/>
       </batchtest>
     </junit>
   </target>
