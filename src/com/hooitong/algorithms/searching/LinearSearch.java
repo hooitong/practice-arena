@@ -13,19 +13,19 @@ package com.hooitong.algorithms.searching;
 public class LinearSearch {
 
   /**
-   * Finds the given value in the given array and returns the value if found. Otherwise,
-   * returns Integer.MAX_VALUE
+   * Finds the given value in the given array and returns the index if found.
+   * Otherwise, returns -1.
    *
    * @param value the integer to be found
    * @param array an array of integers
-   * @return value that was found else Integer.MAX_VALUE
+   * @return value that was found else -1
    */
   public static final int find(int value, int[] array) {
     for (int i = 0; i < array.length; i++) {
       if (value == array[i]) {
-        return value;
+        return i;
       }
     }
-    return Integer.MAX_VALUE;
+    return -1;
   }
 }

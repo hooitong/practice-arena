@@ -12,7 +12,7 @@ public class LinearSearchTest {
   @Test
   public void find() {
     int[] mockArray = {1, 5, 6, 7, 3};
-    assertEquals(3, LinearSearch.find(3, mockArray));
+    assertEquals(4, LinearSearch.find(3, mockArray));
   }
 
 }
